@@ -73,11 +73,11 @@ An example of this configuration is:
   blockchainExplorerOpts: {
     livenet: {
       provider: 'insight',
-      url: 'https://insight.bitpay.com:443',
+      url: 'https://unifyexplorer.com:443',
     },
     testnet: {
       provider: 'insight',
-      url: 'https://test-insight.bitpay.com:443',
+      url: 'https://unifyexplorer.com:443',
     },
   }
 ```

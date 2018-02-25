@@ -41,14 +41,14 @@ var config = {
     btc: {
       livenet: {
         provider: 'insight',
-        url: 'https://insight.bitpay.com:443',
+        url: 'https://unifyexplorer.com:443',
       },
       testnet: {
         provider: 'insight',
-        url: 'https://test-insight.bitpay.com:443',
+        url: 'https://unifyexplorer.com:443',
         // url: 'http://localhost:3001',
         // Multiple servers (in priority order)
-        // url: ['http://a.b.c', 'https://test-insight.bitpay.com:443'],
+        // url: ['http://a.b.c', 'https://unifyexplorer.com:443'],
       },
     },
     bch: {
@@ -81,8 +81,8 @@ var config = {
   //  defaultLanguage: 'en',
   //  defaultUnit: 'btc',
   //  publicTxUrlTemplate: {
-  //    livenet: 'https://insight.bitpay.com/tx/{{txid}}',
-  //    testnet: 'https://test-insight.bitpay.com/tx/{{txid}}',
+  //    livenet: 'https://unifyexplorer.com/tx/{{txid}}',
+  //    testnet: 'https://unifyexplorer.com/tx/{{txid}}',
   //  },
   //},
   //
