@@ -45,7 +45,7 @@ var config = {
       },
       testnet: {
         provider: 'insight',
-        url: ['http://wallet.unify.today:30000', 'http://wallet.unify.today:30001', 'http://wallet.unify.today:30002'],
+        url: 'http://wallet.unify.today:30000',
         // url: 'http://localhost:3001',
         // Multiple servers (in priority order)
         // url: ['http://a.b.c', 'https://unifyexplorer.com:443'],
@@ -58,33 +58,34 @@ var config = {
       },
     },
   },
-  pushNotificationsOpts: {
-    templatePath: './lib/templates',
-    defaultLanguage: 'en',
-    defaultUnit: 'btc',
-    subjectPrefix: '',
-    pushServerUrl: 'https://fcm.googleapis.com/fcm',
-    authorizationKey: '',
-  },
+//  pushNotificationsOpts: {
+//    templatePath: './lib/templates',
+//    defaultLanguage: 'en',
+//    defaultUnit: 'btc',
+//    subjectPrefix: '',
+//    pushServerUrl: 'https://fcm.googleapis.com/fcm',
+//    authorizationKey: '',
+// },
   fiatRateServiceOpts: {
     defaultProvider: 'BitPay',
     fetchInterval: 60, // in minutes
   },
-  // To use email notifications uncomment this:
-  // emailOpts: {
-  //  host: 'localhost',
-  //  port: 25,
-  //  ignoreTLS: true,
-  //  subjectPrefix: '[Wallet Service]',
-  //  from: 'wallet-service@unifypay.org',
-  //  templatePath: './lib/templates',
-  //  defaultLanguage: 'en',
-  //  defaultUnit: 'btc',
-  //  publicTxUrlTemplate: {
-  //    livenet: 'https://unifyexplorer.com/tx/{{txid}}',
-  //    testnet: 'https://unifyexplorer.com/tx/{{txid}}',
-  //  },
-  //},
+
+ // To use email notifications uncomment this:
+  emailOpts: {
+    host: 'localhost',
+    port: 25,
+    ignoreTLS: true,
+    subjectPrefix: '[Wallet Service]',
+    from: 'ihook98.unify@gmail.com',
+    templatePath: './lib/templates',
+    defaultLanguage: 'en',
+    defaultUnit: 'btc',
+    publicTxUrlTemplate: {
+      livenet: 'https://wallet.unify.today/tx/{{txid}}',
+      testnet: 'https://wallet.unify.today/tx/{{txid}}',
+    },
+  },
   //
   // To use sendgrid:
   // var sgTransport = require('nodemail-sendgrid-transport');
