@@ -41,11 +41,11 @@ var config = {
     btc: {
       livenet: {
         provider: 'insight',
-        url: ['http://wallet.unify.today:30000', 'http://wallet.unify.today:30001', 'http://wallet.unify.today:30002'],
+        url: 'https://wallet.unify.today',
       },
       testnet: {
         provider: 'insight',
-        url: 'http://wallet.unify.today:30000',
+        url: 'https://wallet.unify.today',
         // url: 'http://localhost:3001',
         // Multiple servers (in priority order)
         // url: ['http://a.b.c', 'https://unifyexplorer.com:443'],
