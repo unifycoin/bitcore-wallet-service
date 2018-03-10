@@ -61,20 +61,20 @@ var config = {
     },
     */
   },
-//  pushNotificationsOpts: {
-//    templatePath: './lib/templates',
-//    defaultLanguage: 'en',
-//    defaultUnit: 'btc',
-//    subjectPrefix: '',
-//    pushServerUrl: 'https://fcm.googleapis.com/fcm',
-//    authorizationKey: '',
-// },
+  pushNotificationsOpts: {
+    templatePath: './lib/templates',
+    defaultLanguage: 'en',
+    defaultUnit: 'btc',
+    subjectPrefix: '',
+    pushServerUrl: 'https://fcm.googleapis.com/fcm',
+    authorizationKey: '',
+  },
   fiatRateServiceOpts: {
     defaultProvider: 'BitPay',
     fetchInterval: 60, // in minutes
   },
 
- // To use email notifications uncomment this:
+  // To use email notifications uncomment this:
   emailOpts: {
     host: 'localhost',
     port: 25,
