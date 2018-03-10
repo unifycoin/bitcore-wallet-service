@@ -41,8 +41,8 @@ var config = {
     btc: {
       livenet: {
         provider: 'insight',
-        url: 'https://wallet.unify.today',
-      },
+        url: ['https://wallet.unify.today', 'http://wallet.unify.today:30000', 'http://wallet.unify.today:30001', 'http://wallet.unify.today:30002'],
+      },/*
       testnet: {
         provider: 'insight',
         url: 'https://wallet.unify.today',
@@ -50,13 +50,16 @@ var config = {
         // Multiple servers (in priority order)
         // url: ['http://a.b.c', 'https://unifyexplorer.com:443'],
       },
+      */
     },
+    /* by hms testnet
     bch: {
       livenet: {
         provider: 'insight',
         url: 'https://cashexplorer.bitcoin.com',
       },
     },
+    */
   },
 //  pushNotificationsOpts: {
 //    templatePath: './lib/templates',
