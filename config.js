@@ -41,7 +41,7 @@ var config = {
     btc: {
       livenet: {
         provider: 'insight',
-        url: ['https://wallet.unify.today', 'http://wallet.unify.today:30000', 'http://wallet.unify.today:30001', 'http://wallet.unify.today:30002'],
+        url: ['http://wallet.unify.today:30000', 'http://wallet.unify.today:30001', 'http://wallet.unify.today:30002'],
       },/*
       testnet: {
         provider: 'insight',
