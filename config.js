@@ -80,7 +80,7 @@ var config = {
     port: 25,
     ignoreTLS: true,
     subjectPrefix: '[Wallet Service]',
-    from: 'ihook98.unify@gmail.com',
+    from: 'wallet-service@unify.today',
     templatePath: './lib/templates',
     defaultLanguage: 'en',
     defaultUnit: 'btc',
